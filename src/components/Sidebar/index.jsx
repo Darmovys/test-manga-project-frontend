@@ -39,7 +39,10 @@ function Sidebar() {
         {isAuth ? (
           <div className='image-text'>
             <span className='image'>
-              <img src='http://localhost:4444/images/basicAvatar/avatar.gif' alt='Аватар' />
+              <img
+                src={`${process.env.REACT_APP_API_URL}/images/basicAvatar/avatar.gif`}
+                alt='Аватар'
+              />
             </span>
             <a href='#'>
               <span className='text'>Android</span>
