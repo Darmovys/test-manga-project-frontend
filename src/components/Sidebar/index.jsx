@@ -40,7 +40,7 @@ function Sidebar() {
           <div className='image-text'>
             <span className='image'>
               <img
-                src={`${process.env.REACT_APP_API_URL}images/basicAvatar/avatar.gif`}
+                src={`${process.env.REACT_APP_API_URL}/images/basicAvatar/avatar.gif`}
                 alt='Аватар'
               />
             </span>
