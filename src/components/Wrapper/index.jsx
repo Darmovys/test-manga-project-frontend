@@ -34,7 +34,7 @@ function Wrapper() {
         <div className='reader-view_container'>
           {items.map((obj) => (
             <div className={`reader-view_wrap ${pageNum === obj.page ? '' : 'hidden'}`}>
-              <img src={`process.env.REACT_APP_API_URL${obj.imageUrl}`} data-page={obj.page} />
+              <img src={`${process.env.REACT_APP_API_URL}${obj.imageUrl}`} data-page={obj.page} />
             </div>
           ))}
         </div>
